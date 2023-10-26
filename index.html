@@ -16,30 +16,107 @@
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./dist/style.css">
+
+  <script src="https://kit.fontawesome.com/fb401d652e.js" crossorigin="anonymous" defer></script>
+  <script src="./src/script.js" defer></script>
 </head>
 
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on
-  team members for the Premium plan.
+<body class="font-kumbh flex items-center justify-center w-full h-full min-h-screen">
+  <div
+    class="wrapper bg-gradient-to-b from-customPrimaryViolet to-customPrimaryBlue flex flex-col items-center justify-center w-full min-h-screen px-6">
+    <div
+      class="accordion-container flex flex-col items-center w-[327px] rounded-3xl text-customTextDarkGrayish relative px-6 py-10  bg-white">
+      <div class="hero-image absolute top-[-142px] w-full">
+        <picture class="">
+          <source>
+          <img src="./images/illustration-woman-online-mobile.svg" alt="" class="scale-[0.75]">
+        </picture>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      </div>
+      <div class="hero-pattern absolute top-0">
+        <picture>
+          <source media="(min-width: )" srcset="">
+          <img src="./images/bg-pattern-mobile.svg" alt="" class="w-full">
+        </picture>
+      </div>
+      <h1 class="text-customTextPrimaryDark mt-20 mb-6 text-3xl font-bold text-center uppercase">faq</h1>
+      <div class="accordion flex flex-col text-xs">
+        <div class="accordion-item grid grid-cols-[1fr_auto] py-2 cursor-pointer gap-x-8" data-tab='1'>
+          <p class="question text-customTextPrimaryDark text-[13px] hover:text-customTextPrimaryRed transition-colors ">
+            How many team members can I invite?
+          </p>
+          <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
+          <p class="answer hidden col-span-2 pr-8 mt-2">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </p>
+        </div>
+        <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <div class="accordion-item grid grid-cols-[1fr_auto] py-2 gap-x-8 cursor-pointer " data-tab='2'>
+          <p class="question text-customTextPrimaryDark text-[13px] hover:text-customTextPrimaryRed transition-colors">
+            What is the maximum file upload size?
+          </p>
+          <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
+          <p class="answer hidden col-span-2 pr-8 mt-2">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div>
+        <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
+        <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer" data-tab='3'>
+          <p class="question text-customTextPrimaryDark text-[13px] hover:text-customTextPrimaryRed transition-colors">
+            How do I reset my password?
+          </p>
+          <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
+          <p class="answer hidden col-span-2 pr-8 mt-2">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        </div>
+        <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
+        <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer " data-tab='4'>
+          <p class="question text-customTextPrimaryDark text-[13px] hover:text-customTextPrimaryRed transition-colors">
+            Can I cancel my subscription?
+          </p>
+          <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
+          <p class="answer hidden col-span-2 pr-8 mt-2">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        </div>
+        <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
+        <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer " data-tab='5'>
+          <p class="question text-customTextPrimaryDark text-[13px] hover:text-customTextPrimaryRed transition-colors">
+            Do you provide additional support?
+          </p>
+          <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
+          <p class="answer hidden col-span-2 pr-8 mt-2"> Chat and email support is available 24/7. Phone lines are open
+            during
+            normal
+            business
+            hours.
+          </p>
+        </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
+
 </body>
 
 </html>
