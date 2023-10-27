@@ -23,98 +23,119 @@
 
 <body class="font-kumbh flex items-center justify-center w-full h-full min-h-screen">
   <div
-    class="wrapper bg-gradient-to-b from-customPrimaryViolet to-customPrimaryBlue flex flex-col items-center justify-center w-full min-h-screen px-6">
-    <div
-      class="accordion-container h-auto flex flex-col md:flex-row items-center w-[327px] md:max-w-[950px] md:w-full rounded-3xl text-customTextDarkGrayish relative px-6 py-10 bg-white md:overflow-hidden md:px-20 md:py-16">
-      <div class="hero-image absolute md:relative md:-left-[130px] top-[-142px] md:top-0 w-full md:w-auto md:flex-1">
-        <picture class="">
-          <source media="(min-width:768px)" srcset="./images/illustration-woman-online-desktop.svg">
-          <img src="./images/illustration-woman-online-mobile.svg" alt="" class="scale-[0.75] md:scale-[1.15]">
-        </picture>
-
+    class="wrapper bg-gradient-to-b from-customPrimaryViolet to-customPrimaryBlue relative flex flex-col items-center justify-center w-full min-h-screen px-10">
+    <div class="w-[327px] md:max-w-[950px] md:w-full rounded-3xl relative">
+      <div class="hero-box md:block md:top-1/2 md:-translate-y-1/4 md:-left-[80px] absolute z-20 hidden">
+        <img src="./images/illustration-box-desktop.svg" alt="" class="md:w-[80%] lg:w-[90%]">
       </div>
-      <div class="hero-pattern absolute top-0">
-        <picture>
-          <source media="(min-width: )" srcset="">
-          <img src="./images/bg-pattern-mobile.svg" alt="" class="w-full">
-        </picture>
-      </div>
+      <div
+        class="accordion-container h-auto flex flex-col md:flex-row items-center w-[327px] md:max-w-[950px] md:w-full rounded-3xl text-customTextDarkGrayish relative px-6 py-10 bg-white md:overflow-hidden md:px-20 md:py-16">
+        <div
+          class="hero-image absolute md:relative md:-left-[125px] top-[-142px] md:top-0 w-full md:w-auto md:flex-1 md:z-10">
+          <picture class="">
+            <source media="(min-width:768px)" srcset="./images/illustration-woman-online-desktop.svg">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="" class="scale-[0.75] md:scale-[1.15]">
+          </picture>
+        </div>
+        <div class="hero-pattern md:-top-[280px] md:-left-[670px] lg:-top-[50%] lg:-left-[58%] absolute top-0">
+          <picture>
+            <source media="(min-width:768px)" srcset="./images/bg-pattern-desktop.svg">
+            <img src="./images/bg-pattern-mobile.svg" alt="" class="md:scale-[90%] lg:w-full w-full">
+          </picture>
+        </div>
 
-      <div class="md:flex-1 md:max-w-[430px] flex h-full md:min-h-[400px] md:items-center  text-xs md:text-sm md:mr-6">
-        <div class="accordion md:flex-1 md:max-w-[430px] flex flex-col h-full  text-xs md:text-sm md:mr-6">
-          <h1
-            class="text-customTextPrimaryDark mt-[100px] mb-6 md:mb-8 text-3xl md:text-4xl font-bold text-center md:text-left uppercase md:mt-0">
-            faq</h1>
-          <div class="accordion-item grid grid-cols-[1fr_auto] py-2 cursor-pointer gap-x-8" data-tab='1'>
-            <p
-              class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors ">
-              How many team members can I invite?
-            </p>
-            <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
-            <p class="answer md:max-w-[370px] hidden w-full col-span-2 pr-8 mt-2">
-              You can invite up to 2 additional users on the Free plan. There is no limit on
-              team members for the Premium plan.
-            </p>
-          </div>
-          <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
 
-          <div class="accordion-item grid grid-cols-[1fr_auto] py-2 gap-x-8 cursor-pointer " data-tab='2'>
-            <p
-              class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
-              What is the maximum file upload size?
-            </p>
-            <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
-            <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2">
-              No more than 2GB. All files in your account must fit your allotted storage space.
-            </p>
-          </div>
-          <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
-          <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer" data-tab='3'>
-            <p
-              class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
-              How do I reset my password?
-            </p>
-            <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
-            <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2">
-              Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.
-            </p>
+        <div
+          class="md:flex-1 md:max-w-[430px] flex h-full md:min-h-[400px] md:items-center  text-xs md:text-sm md:mr-6">
+          <div class="accordion md:flex-1 md:max-w-[430px] flex flex-col h-full  text-xs md:text-sm md:mr-6">
+            <h1
+              class="text-customTextPrimaryDark mt-[100px] mb-6 md:mb-8 text-3xl md:text-4xl font-bold text-center md:text-left uppercase md:mt-0">
+              faq</h1>
+            <div class="accordion-item grid grid-cols-[1fr_auto] py-2 cursor-pointer gap-x-8" data-tab='1'>
+              <p
+                class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors ">
+                How many team members can I invite?
+              </p>
+              <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i>
+              </p>
+              <p class="answer md:max-w-[370px] hidden w-full col-span-2 pr-8 mt-2">
+                You can invite up to 2 additional users on the Free plan. There is no limit on
+                team members for the Premium plan.
+              </p>
+            </div>
+            <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
 
-          </div>
-          <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
-          <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer " data-tab='4'>
-            <p
-              class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
-              Can I cancel my subscription?
-            </p>
-            <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
-            <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2">
-              Yes! Send us a message and we’ll process your request no questions asked.
-            </p>
-          </div>
-          <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
-          <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer " data-tab='5'>
-            <p
-              class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
-              Do you provide additional support?
-            </p>
-            <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i></p>
-            <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2"> Chat and email support is available 24/7.
-              Phone lines are open
-              during
-              normal
-              business
-              hours.
-            </p>
+            <div class="accordion-item grid grid-cols-[1fr_auto] py-2 gap-x-8 cursor-pointer " data-tab='2'>
+              <p
+                class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
+                What is the maximum file upload size?
+              </p>
+              <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i>
+              </p>
+              <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2">
+                No more than 2GB. All files in your account must fit your allotted storage space.
+              </p>
+            </div>
+            <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
+            <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer" data-tab='3'>
+              <p
+                class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
+                How do I reset my password?
+              </p>
+              <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i>
+              </p>
+              <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2">
+                Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.
+              </p>
+
+            </div>
+            <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
+            <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer " data-tab='4'>
+              <p
+                class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
+                Can I cancel my subscription?
+              </p>
+              <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i>
+              </p>
+              <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2">
+                Yes! Send us a message and we’ll process your request no questions asked.
+              </p>
+            </div>
+            <div class="divider w-full h-[1px] bg-customGrayishLight my-2"></div>
+            <div class="accordion-item grid grid-cols-[1fr_auto]  py-2 gap-x-8 cursor-pointer " data-tab='5'>
+              <p
+                class="question text-customTextPrimaryDark text-[13px] md:text-[15px] hover:text-customTextPrimaryRed transition-colors">
+                Do you provide additional support?
+              </p>
+              <p class="arrow transition-transform"><i class="fa-solid fa-angle-down text-customTextPrimaryRed "></i>
+              </p>
+              <p class="answer md:max-w-[370px] hidden col-span-2 pr-8 mt-2"> Chat and email support is available 24/7.
+                Phone lines are open
+                during
+                normal
+                business
+                hours.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution mt-6 text-center">
+      <p class="text-customTextPrimaryDark">Challenge by
+        <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam" target="_blank"
+          class="text-customTextPrimaryRed hover:underline hover:underline-offset-2 hover:text-customTextDarkGrayish">Frontend
+          Mentor</a>
+      </p>
+      <p class="text-customTextPrimaryDark">Coded by
+        <a href="https://www.frontendmentor.io/profile/miroslaw-mroczkowski" target="_blank"
+          class="text-customTextPrimaryRed hover:underline hover:underline-offset-2 hover:text-customTextDarkGrayish">Mirosław
+          Mroczkowski</a>
+
+      </p>
     </div>
   </div>
 
